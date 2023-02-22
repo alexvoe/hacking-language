@@ -1,0 +1,539 @@
+html {
+  cursor: url("images/cursor.png"), auto !important;
+}
+
+body {
+  font-family: 'ElizaMono-Regular';
+  font-size: 20px;
+  height: 100vh;
+  width: 100vw;
+  word-wrap: break-word;
+  position: relative;
+  overflow-x: hidden;
+  hyphens: auto;
+  margin: 0 !important;
+}
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.background {
+  pointer-events: none;
+  width: 100%;
+  z-index: -1;
+  transition: 1s ease-in;
+}
+
+
+
+
+
+
+#frage_1 a {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transition: opacity 0.3s ease-in-out;
+  font-family: 'ElizaMono-Regular' !important;
+  font-size: 17px;
+  color: #FF57A2 !important;
+  line-height: 1.0 !important;
+  z-index: 99999;
+
+}
+
+#frage_2 a {
+  position: absolute;
+  bottom: 30%;
+  right: 5%;
+  transition: opacity 0.3s ease-in-out;
+  font-family: 'ElizaMono-Regular' !important;
+  font-size: 17px;
+  color: #FF57A2 !important;
+  line-height: 1.0 !important;
+  z-index: 99999;
+}
+
+
+#frage_3 a {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  transition: opacity 0.3s ease-in-out;
+  font-family: 'ElizaMono-Regular' !important;
+  font-size: 17px;
+  color: #FF57A2 !important;
+  line-height: 1.0 !important;
+  z-index: 99999;
+}
+
+#frage_4 a {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  color: #000000;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
+  font-family: 'ElizaMono-Regular' !important;
+  font-size: 17px;
+  color: #FF57A2 !important;
+  line-height: 1.0 !important;
+  z-index: 99999;
+}
+
+
+#frage_5 a {
+  position: absolute;
+  top: 60%;
+  right: 20%;
+  color: #000000;
+  transition: opacity 0.3s ease-in-out;
+  font-family: 'ElizaMono-Regular' !important;
+  font-size: 17px;
+  color: #FF57A2 !important;
+  line-height: 1.0 !important;
+  z-index: 99999 !important;
+}
+
+#frage_7 {
+  position: absolute;
+  top: 10%;
+  right: 30%;
+  color: #000000;
+  transition: opacity 0.3s ease-in-out;
+  font-family: 'ElizaMono-Regular' !important;
+  font-size: 17px;
+  color: #FF57A2 !important;
+  line-height: 1.0 !important;
+  z-index: 99999 !important;
+}
+
+#frage_6 a {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  color: #000000;
+  transition: opacity 0.3s ease-in-out;
+  font-family: 'ElizaMono-Regular' !important;
+  font-size: 17px;
+  color: #FF57A2 !important;
+  line-height: 1.0 !important;
+  z-index: 99999 !important;
+}
+
+
+div.frage_5 :hover {
+  color: #0062ff !important;
+}
+
+
+
+
+
+
+body.index h3 {
+  color: black;
+}
+
+.object-fit-cover {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0%;
+  left: 0;
+  z-index: -100;
+  overflow: hidden;
+}
+
+
+::selection {
+  background: #0062ff;
+  ;
+}
+
+
+
+/* FONTS */
+@font-face {
+  font-family: 'ElizaMono-Regular';
+  src: url('../font/ElizaMono-Regular.ttf') format('ttf');
+}
+
+
+
+@font-face {
+  font-family: 'ABCMonumentGrotesk-Regular';
+  src: url('../font/ABCMonumentGrotesk-Regular.woff2') format('woff2');
+}
+
+
+
+#menu a {
+  font-family: 'ABCMonumentGrotesk-Regular', sans-serif;
+  color: #0062ff;
+  text-decoration: none;
+  font-size: 4vw;
+}
+
+
+#menu_impressum {
+  bottom: 0.5rem;
+  padding: 0 1.2vw;
+  overflow: hidden;
+  position: fixed;
+}
+
+#menu_impressum a {
+  color: black;
+}
+
+
+#menu,
+#menu_2 {
+  right: 0.5rem;
+  top: 0.5rem;
+  text-align: right;
+  overflow: hidden;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  z-index: 9999999 !important;
+}
+
+#menu_2 {
+  margin-bottom: 4vw;
+}
+
+
+
+#intro {
+  overflow: hidden;
+  /* margin-top: 100px!important;*/
+
+
+}
+
+
+
+#menu_2 a,
+#logo_2 a {
+  color: black;
+}
+
+#logo,
+#logo_2 {
+  top: 0.5rem;
+  text-align: left;
+  overflow: hidden;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  padding: 0 1.2vw;
+
+}
+
+
+
+.left {
+  width: 65%;
+  margin-left: 0vw;
+  margin-top: 2vw;
+
+
+}
+
+.right {
+  width: 22%;
+  margin-left: 2%;
+  margin-right: 1vw;
+  margin-top: 6vw;
+
+}
+
+.right img {
+  width: 75%;
+}
+
+.column {
+  float: left;
+}
+
+
+
+
+.nocolumn {
+  width: 95%;
+  margin-right: 1vw;
+  margin-top: 6vw;
+  float: left;
+}
+
+
+a.button {
+  font-size: 30px !important;
+}
+
+
+
+.info a {
+  font-family: 'ElizaMono-Regular';
+  font-size: 20px;
+  color: black;
+}
+
+
+.hacks a {
+  font-family: 'ABCMonumentGrotesk-Regular', sans-serif;
+  font-weight: 400;
+  color: #0062ff;
+  font-size: 4vw;
+  margin-top: 10%;
+}
+
+
+
+
+h1 {
+  font-family: 'ElizaMono-Regular';
+  font-size: 9.0vw;
+  line-height: 0.9;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle !important;
+  margin-top: 10%;
+}
+
+
+
+
+h2 {
+  font-family: 'ABCMonumentGrotesk-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 3vw;
+  line-height: 0.9;
+  margin-bottom: 15px;
+}
+
+
+h3 {
+  font-size: 2vw;
+  font-family: 'ABCMonumentGrotesk-Regular', sans-serif;
+  font-weight: 400;
+  color: #0062ff;
+  ;
+  margin-bottom: 10px;
+  line-height: 0.6 !important;
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 2vw;
+  font-family: 'ABCMonumentGrotesk-Regular', sans-serif;
+  font-weight: 400;
+  color: #0062ff;
+  ;
+  margin-top: 1%;
+  margin-bottom: 0%;
+}
+
+
+
+p,
+pre {
+  font-family: 'ElizaMono-Regular';
+  font-size: 20px;
+  color: black;
+  margin-left: 0;
+  margin-right: 10% !important;
+  margin-top: 0;
+  margin-bottom: 0;
+
+
+}
+
+.einzug {
+  margin-left: 10% !important;
+  margin-right: 0 !important;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+/* Links*/
+
+mark {
+  background-color: #FF57A2;
+}
+
+
+body.index a {
+  color: #000000;
+}
+
+
+a {
+  font-family: 'ABCMonumentGrotesk-Regular', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+a:hover {
+  font-weight: 400;
+  color: #0062ff;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*Quotes*/
+
+blockquote::before {
+  content: open-quote;
+}
+
+blockquote::after {
+  content: close-quote;
+}
+
+q {
+  font-family: 'ABCMonumentGrotesk-Regular', sans-serif;
+  font-weight: 400;
+  color: #DDDEDC !important;
+  font-size: 3.0vw;
+  quotes: "»" "«";
+  line-height: 1.1;
+}
+
+
+@supports (hanging-punctuation: first) {
+  blockquote {
+    text-indent: 0;
+    hanging-punctuation: first;
+  }
+}
+
+body.index q {
+  font-family: 'ABCMonumentGrotesk-Regular', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 3.0vw;
+}
+
+
+
+
+
+
+.text {
+  display: none;
+  position: relative;
+  font-family: 'ABCMonumentGrotesk-Regular', sans-serif;
+  font-size: 13px !important;
+  margin: 0;
+  letter-spacing: 0.03em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Info Box */
+
+.overlay {
+  height: 200% !important;
+  width: 100% !important;
+  top: -200px;
+  left: 0;
+  right: 0px;
+  background: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.6s ease;
+  z-index: 99999999 !important;
+  position: absolute;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+}
+
+.popup {
+  margin: 0px auto;
+  padding: 20px;
+  background-color: #FF582A;
+  border-radius: 5px;
+  width: 80%;
+  transition: all 0.1s ease-in-out;
+
+}
+
+
+#popup1 a {
+  font-family: 'ElizaMono-Regular';
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#popup1 a:hover {
+  font-family: 'ABCMonumentGrotesk-Regular', sans-serif !important;
+}
+
+
+.popup h2 {
+  font-size: 5vw;
+  font-family: 'ABCMonumentGrotesk-Regular', sans-serif;
+  text-indent: 0;
+  margin-top: 0;
+}
+
+.popup .close {
+  font-weight: 200!important;
+  font-family: 'ABCMonumentGrotesk-Regular', sans-serif!important;
+  position: absolute;
+  top: 20px;
+  right: 15%!important;
+  /*transition: all 200ms;*/
+  font-size: 50px!important;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  
+}
+
+
+.popup .close:hover {
+  font-weight: 200!important;
+  font-family: 'ABCMonumentGrotesk-Regular', sans-serif!important;
+  position: absolute;
+  top: 20px!important;
+  right: 15%!important;
+  font-size: 50px!important;
+  font-weight: bold!important;
+  color: black!important;
+
+}
+
+
+.popup .content {
+  max-height: 90%;
+  overflow: auto;
+}

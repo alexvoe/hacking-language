@@ -1,0 +1,26 @@
+ @font-face {
+    font-family: 'gt-walsheim-regular';
+  }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'gt-walsheim-regular';
+
+}
+canvas {
+  display: block;
+}
+
+
+h1{
+  font-family: 'gt-walsheim-regular';
+}
+
+h3{
+  font-family: 'gt-walsheim-regular';
+}
+
+p {
+  font-family: 'gt-walsheim-regular';
+}

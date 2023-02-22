@@ -1,0 +1,54 @@
+
+   
+
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<style type="text/css">
+div, aside, button {
+display: block;
+margin: 1rem auto;
+text-align: center;
+}
+@media print {
+/* Sets print view with media query */
+body * {
+display: none;
+}
+/* Sets body and elements in it to not display */
+.print-area, .print-area * {
+display: block;
+}
+/* Sets print area element and all its content to display */
+}
+</style>
+<body data-rsssl=1>
+<div class="print-area">
+Print me.
+</div>
+<aside>
+Don't print me.
+</aside>
+<button id="printBtn">Print</button>
+</body>
+<script type="text/javascript">
+document.getElementById('printBtn').addEventListener('click', () => { window.print() });
+// Prints area to which class was assigned only
+</script>
+  
+</body>
+</html>
+
+
+
+
+
+  
+

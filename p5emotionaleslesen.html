@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Emotionales Lesen</title>
+  <link rel='stylesheet' href='https://phnodevelopment.github.io/variable-type-experiment/Cheee_Variable.woff2'>
+  <link rel="stylesheet" href="css/style-lesen.css">
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+</head>
+
+
+  <body id="pink">
+
+
+
+
+    <!-- MENU -->
+    <div id="logo_2">
+      <a class="button" href='index.html'>Hacking Language</a>
+    </div>
+
+
+    <div id="menu_2">
+      <a class="button" href="#popup1">Info</a>
+      <a class="button" href='hacks.html'>Hacks</a>
+      <a class="button" href='glossar.html'>Glossar</a>
+    </div>
+
+
+
+    <!-- Text-Intro -->
+  <!-- 
+    <div class='control-container'>
+      <div class='tooltip-container'>
+        <span id='q'>?</span>
+        <span id='tooltip'>Diese Seite verwendet die Speech API, um Wörter, die von Ihrem Computermikrofon kommen, zu
+          interpretieren und sie in Echtzeit auf die Seite zu drucken. Gleichzeitig sammelt die Web-Audio-API
+          Frequenzdaten vom Mikrofon und verwendet diese Frequenzzahlen, um verschiedene Parameter zu modulieren, die
+          mit dieser Schriftart zur Verfügung stehen.
+
+          Die Schrift die verwendet wird ist <a href='https://velvetyne.fr/fonts/tiny/'>Tiny</a> von <a
+            href='https://velvetyne.fr/'>Velvetyne</a> <br>
+          <br>Dies funktioniert nicht ohne Zugriff auf das Mikrofon deines Computers. Du solltest ein rotes
+          Aufnahme-Symbol in deinem Browser sehen, wenn du erfolgreich die Erlaubnis erteilt hast. </i><br><br>
+          Probiere<br>
+          • Den Text laut vorzulesen<br>
+          • Einen eigenen Text zu schreiben<br>
+          • Und ihn wieder zu lesen<br>
+
+        </span>
+      </div>
+    -->
+      <!-- Gewicht -->
+
+      <div class="controls" style="display:none">
+        <div property="axis">
+          <label for="wght"><span property="name" aria-label="Name">Weight</span></label>
+          <input type="range" property="value" min="0" max="400" id="wght-amt" datatype="number" value="120"
+            aria-label="Value" class="range-input">
+          &nbsp;<span class='axes-value' id="wght"></span>
+        </div>
+
+
+        <!-- Kontrast-->
+
+        <div property="axis">
+          <label for="cntr"><span property="name" aria-label="Name">Contrast</span></label>
+          <input type="range" property="value" min="0" max="170" id="cntr-amt" datatype="number" value="0"
+            aria-label="Value" class="range-input">
+          &nbsp;<span class='axes-value' id="cntr"></span>
+        </div>
+
+        <!-- Winkel-->
+        <div property="axis">
+          <label for="grad"><span property="name" aria-label="Name">Grade</span></label>
+          <input type="range" property="value" min="50" max="500" id="grad-amt" datatype="number" value="275"
+            aria-label="Value" class="range-input">
+          &nbsp;<span class='axes-value' id="grad"></span>
+        </div>
+
+        <!-- Optische Größe-->
+
+        <div property="axis">
+          <label for="opsz"><span property="name" aria-label="Name">Optical Size</span></label>
+          <input type="range" property="value" min="10" max="72" id="opsz-amt" datatype="number" value="41"
+            aria-label="Value" class="range-input">
+          &nbsp;<span class='axes-value' id="opsz"></span>
+        </div>
+
+        <!-- Weite-->
+        <div property="axis">
+          <label for="wdth"><span property="name" aria-label="Name">Width</span></label>
+          <input type="range" property="value" min="120" max="800" id="wdth-amt" datatype="number" value="460"
+            aria-label="Value" class="range-input">
+          &nbsp;<span class='axes-value' id="wdth"></span>
+        </div>
+
+        <!-- ParaWeite-->
+        <div property="axis">
+          <label for="prwd"><span property="name" aria-label="Name">ParaWidth</span></label>
+          <input type="range" property="value" min="84" max="804" id="prwd-amt" datatype="number" value="804"
+            aria-label="Value" class="range-input">
+          &nbsp;<span class='axes-value' id="prwd"></span>
+        </div>
+
+        <!-- ParaWeite-->
+        <div property="axis">
+          <label for="prwg"><span property="name" aria-label="Name">ParaWeight</span></label>
+          <input type="range" property="value" min="10" max="999" id="prwg-amt" datatype="number" value="200"
+            aria-label="Value" class="range-input">
+          &nbsp;<span class='axes-value' id="prwg"></span>
+        </div>
+
+        <!-- Serifen_-->
+        <div property="axis">
+          <label for="srfr"><span property="name" aria-label="Name">Serif rise</span></label>
+          <input type="range" property="value" min="0" max="95" id="srfr-amt" datatype="number" value="47.5"
+            aria-label="Value" class="range-input">
+          &nbsp;<span class='axes-value' id="srfr"></span>
+        </div>
+
+        <!-- x-Höhe-->
+        <div property="axis">
+          <label for="xhgt"><span property="name" aria-label="Name">x-height</span></label>
+          <input type="range" property="value" min="890" max="1200" id="xhgt-amt" datatype="number" value="1045"
+            aria-label="Value" class="range-input">
+          &nbsp;<span class='axes-value' id="xhgt"></span>
+        </div>
+      </div>
+
+
+
+
+      <!-- Mikrofon Kontrolle-->
+      <div class="demo" id='demo'>
+        <div class="v-bar">
+          <div class="audio icon"></div>
+          <div id='recording-state'>Klicke das Mikrofon um mit der Aufnahme zu starten.</div>
+  
+        </div>
+
+     <!-- Text zum VORLESEN-->
+ 
+<!-- <p style="font-variation-settings: 'wght' 157, 'cntr' 96, 'grad' 194, 'opsz' 17, 'wdth' 424, 'prwd' 694, 'prwg' 128, 'srfr' 5, 'xhgt' 1200" property="text" contenteditable="true" id='editableText'></p> -->
+<!-- <p style="font-variation-settings:'temp' 700, 'yest' 148.08, 'grvt' 331.64" property="text" contenteditable="true" id='editableText' x-webkit-speech>Habe ich das jetzt gesagt oder gedacht?</p> -->
+<p property="text" contenteditable="true" id='editableText' x-webkit-speech>Habe ich das jetzt gesagt oder gedacht?</p>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
+  <script src="js/audiodata-chee.js"></script>
+  <script src="js/speech.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+
+
+<!-- <script src='https://phnodevelopment.github.io/variable-type-experiment/js/audiodata-chee.js'></script>-->
+<script src='js/test-neu'></script><script  src="./script.js"></script>
+
+</body>
+</html>
